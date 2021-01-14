@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>David Billups</title>
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <h1>David Billups</h1>
+            </div>
+        </header>
+
+        <main id="container">
+            <section>
+                <h2>Daily Journal</h2>
+                <form>
+                    <fieldset class="flexContainer">
+                        <label for="journalDate">Date of Entry</label>
+                        <input type="date" name="journalDate" id="journalDate">
+                                        
+                        <label for="concepts">Concepts Covered</label>
+                        <input type="text" name="concepts"" id="concepts">
+                                       
+                        <label for="journalEntry">Journal Entry</label>
+                        <input type="text" name="journalEntry" id="journalEntry">
+                    
+                        <!-- Mood Selector -->
+                        <label for="mood">Mood</label>
+                        <select name="Mood" id="mood">
+                            <option value="happy">Happy</option>
+                            <option value="happy">Sad</option>
+                            <option value="happy">Frustrated</option>
+                            <option value="happy">Calm</option>
+                        </select>
+
+                        <!-- Record Entry Button -->
+                        <input type="submit" value="Record Entry" name="recordEntry" id="recordEntry">
+                    </fieldset>
+                </form>
+            </section>
+            <section>
+                <article>
+                    <div>Date</div>
+                    <div>Concepts Covered</div>
+                    <div>Mood</div>
+                    <div>Journal Entry</div>
+                    <div>Submit Button</div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div><a href="#">Link to Github</a></div>
+            <div>Copyright 2021</div>
+
+        </footer>
+        <script type="module" src="./scripts/main.js"></script>
+    </body>
+</html>
