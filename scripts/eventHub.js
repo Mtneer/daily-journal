@@ -1,20 +1,38 @@
+import { saveJournalEntry, deleteJournalEntry } from './entries/entryDataProvider.js'
+import { EntryListComponent } from './entries/entryList.js'
 
-
+let eventHub = document.querySelector("main")
 
 eventHub.addEventListener("click", (eventObject) => {
     if (eventObject.target.id === "recordEntry") {
-        console.log(eventObject.target.id)
         eventObject.preventDefault()
         // Make a new object representation of a note
-        const newNote = {
-            date: eventObject.target.form[1].value,
-            suspect: eventObject.target.form[2].value,
-            note: eventObject.target.form[3].value
+        const newEntry = {
+            date: document.querySelector("#journalDate").value,
+            concept: document.querySelector("#concepts").value,
+            entry: document.querySelector("#journalEntry").value,
+            moodId: parseInt(document.querySelector("#mood").value),
         }
-        console.log(newNote)
 
-        // Change API state and application state
-        saveNote(newNote)
-        .then(NoteList) // Refresh your list of notes once you've saved your new one
-    } 
+        // Empty the form fields
+        document.querySelector("#journalDate").value = ""
+        document.querySelector("#concepts").value = ""
+        document.querySelector("#journalEntry").value = ""
+        document.querySelector("#mood").value = ""
+
+        saveJournalEntry(newEntry) 
+    } else if (eventObject.target.id.includes("deleteEntry")) {
+        let entryID = parseInt(eventObject.target.id.split("--")[1]);
+
+        deleteJournalEntry(entryID)
+    }
+})
+
+eventHub.addEventListener("change", (eventObject) => {
+    if (eventObject.target.id.includes("mood-filter")) {
+        let moodID = parseInt(eventObject.target.id.split("--")[1]);
+        
+        EntryListComponent(moodID)
+
+    }
 })
