@@ -1,0 +1,61 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "date": "2021-02-01",
+      "concept": "fetch and POST calls to local API",
+      "entry": "Today we learned how to add fetch and POST API functionality to this site!",
+      "moodId": 1
+    },
+    {
+      "id": 2,
+      "date": "2021-02-01",
+      "concept": "fetch and POST calls to local API",
+      "entry": "Today we learned how to add fetch and POST API functionality to this site!",
+      "moodId": 1
+    },
+    {
+      "id": 4,
+      "date": "2021-01-04",
+      "concept": "first day",
+      "entry": "first day of school! first day of school!",
+      "moodId": 1
+    },
+    {
+      "date": "2021-02-12",
+      "concept": "Relating data in JSON Server",
+      "entry": "Refactoring code that you last edited weeks ago is frustrating. Incorporating new knowledge into old projects is also challenging. The original code wasn't built in an appropriate way to support some of this new functionality. But I finally got it working after a couple of hours.",
+      "moodId": 5,
+      "id": 5
+    },
+    {
+      "date": "2021-02-08",
+      "concept": "External APIs",
+      "entry": "Jon, Wes, and I worked on a group project the past 5 days utilizing various external APIs to produce a travel website. I learned a lot about organizing modules and the synchronicity of code. I was able to use significantly fewer fetch calls than in previous projects. ",
+      "moodId": 1,
+      "id": 6
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "Happy"
+    },
+    {
+      "id": 2,
+      "label": "Sad"
+    },
+    {
+      "id": 3,
+      "label": "Indifferent"
+    },
+    {
+      "id": 4,
+      "label": "Calm"
+    },
+    {
+      "id": 5,
+      "label": "Frustrated"
+    }
+  ]
+}

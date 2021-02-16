@@ -27,3 +27,14 @@ letter-spacing: 2px;
     display: flex;
     flex-direction: column;
 } 
+
+.journalEntry {
+    border-bottom: 2px solid black;
+    margin-bottom: 1em;
+    padding-bottom: 0;
+}
+
+legend {
+    font-size: 16px;
+
+}
